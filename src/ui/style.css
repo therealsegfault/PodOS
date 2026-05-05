@@ -1,0 +1,162 @@
+/* podOS GTK4 stylesheet — iOS 6 skeuomorphic palette */
+
+/* SF Pro → system sans as fallback */
+* {
+    font-family: "SF Pro Display", "SF Pro", "Helvetica Neue", sans-serif;
+}
+
+.root-bg {
+    background-color: #000000;
+}
+
+/* ── Settings palette ── */
+.settings-bg {
+    background-color: #efeff4;
+}
+
+.settings-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.settings-separator {
+    background-color: #c8c8cc;
+    min-height: 1px;
+}
+
+.settings-section-header {
+    color: #6d6d72;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.settings-secondary {
+    color: #8e8e93;
+    font-size: 13px;
+}
+
+.settings-label {
+    color: #000000;
+    font-size: 17px;
+}
+
+.settings-value {
+    color: #8e8e93;
+    font-size: 17px;
+}
+
+.settings-chevron {
+    color: #c7c7cc;
+    font-size: 17px;
+}
+
+/* ── iOS 6 toggle switch ── */
+.toggle-track {
+    border-radius: 16px;
+    min-width: 51px;
+    min-height: 31px;
+    transition: background-color 200ms ease;
+}
+
+.toggle-track.on {
+    background-color: #4cd964;
+}
+
+.toggle-track.off {
+    background-color: #e5e5ea;
+    border: 1px solid #c8c8cc;
+}
+
+.toggle-thumb {
+    border-radius: 14px;
+    min-width: 27px;
+    min-height: 27px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: margin-left 200ms ease;
+}
+
+/* ── Accent / brand ── */
+.accent {
+    color: #007aff;
+}
+
+/* ── Back button ── */
+.back-button {
+    color: #007aff;
+    font-size: 17px;
+    background: none;
+    border: none;
+    padding: 0 8px;
+    box-shadow: none;
+}
+
+.back-button:hover {
+    color: #005ec4;
+}
+
+/* ── Settings header bar ── */
+.settings-header {
+    background-color: #efeff4;
+    border-bottom: 1px solid #c8c8cc;
+    padding: 8px 12px;
+    min-height: 44px;
+}
+
+.settings-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* ── Search bar ── */
+.settings-search {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 15px;
+    color: #8e8e93;
+}
+
+.settings-search:focus {
+    outline: none;
+}
+
+/* ── Starboard ── */
+.starboard-bg {
+    background-color: #000000;
+}
+
+.app-label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.app-sublabel {
+    color: #888888;
+    font-size: 13px;
+}
+
+/* ── Slider ── */
+scale trough {
+    background-color: #c8c8cc;
+    border-radius: 4px;
+    min-height: 4px;
+}
+
+scale trough highlight {
+    background-color: #007aff;
+    border-radius: 4px;
+}
+
+scale slider {
+    background-color: #ffffff;
+    border-radius: 50%;
+    min-width: 24px;
+    min-height: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
