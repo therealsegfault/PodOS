@@ -1,0 +1,36 @@
+# tappable.yml — podOS third-party app manifest
+# All fields shown; optional fields may be omitted.
+
+name: "My Pod App"
+id: "com.example.mypodapp"
+version: "1.2.0"
+author: "Jane Developer <jane@example.com>"
+
+display:
+  icon: "🎮"            # Emoji or path to 256x256 PNG
+  accent: "#ff6b35"     # Accent color used on Starboard card
+  label: "My Pod App"   # Name shown below Starboard card
+  show_label: true      # Whether to show label (default true)
+
+permissions:
+  - network             # Outbound HTTP/HTTPS
+  - storage.read        # Read user media library
+  - storage.write       # Write to app sandbox
+  - audio.playback      # Play audio in background
+  - audio.record        # Microphone access
+  - display.brightness  # Adjust screen brightness
+
+input:
+  wheel: true           # Receive click wheel / arrow-key events
+  touch: true           # Receive touch events
+
+launch:
+  entry: "main.py"                   # Python entrypoint (relative to app bundle)
+  window_background: "#1c1c1e"       # Initial window background before UI loads
+  transparent: false                  # True for overlay/widget-only apps
+
+# Widget support (optional — omit entire block if not a widget)
+widget:
+  type: "widget"                     # "widget" | "app" | "overlay"
+  size: "small"                      # "small" (2x2) | "medium" (4x2) | "large" (4x4)
+  refresh_rate: 60                   # Refresh rate in seconds (0 = event-driven)
